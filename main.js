@@ -50,7 +50,7 @@ function adicionarLinha() {
 
 function atualizaMediaFinal(){
     const mediaFinal = calcMediaFinal();
-    document.getElementById("media-final-valor").innerHTML = mediaFinal;
+    document.getElementById("media-final-valor").innerHTML = mediaFinal.toFixed(2);
     document.getElementById("media-final-resultado").innerHTML = mediaFinal >= 7 ? aprovado : reprovado ;
 }
 
